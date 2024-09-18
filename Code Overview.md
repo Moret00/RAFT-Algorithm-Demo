@@ -56,4 +56,30 @@ Contains the main method for running the simulation:
 - _Runs Simulation_: Allows the simulation to run for 15 seconds.
 - _Shutdown_: Shuts down the executor services for all servers
 
+**Testing Highlights: Initial Server Startup**
+
+![example](https://github.com/Moret00/RAFT-Algorithm-Demo/edit/main/introduction.png)
+
+All three servers (Server 1, Server 2, and Server 3) have initialized and started in the FOLLOWER state. This is the default state for all servers when the system starts, where they wait for a leader to be elected.
+
+**Testing Highlights: Election and Leader Transition**
+
+![](https://github.com/Moret00/RAFT-Algorithm-Demo/edit/main/firstTerm.png)
+
+- _Election Start_: Server 2 initiates an election for term 1.
+- _Vote Request_: Server 1 receives a vote request from Server 2 for term 1 and updates its term to 1, changing its state to FOLLOWER.
+- _Vote Granting_: Server 2 receives the necessary votes (including its own) and is elected as the leader for term 1.
+- _Heartbeat Sending_: Server 2 begins sending heartbeats to other servers to assert its leadership.
+- _State Change_: Server 3 receives the heartbeat from Server 2 and changes its state to FOLLOWER.
+- _Log Replication_: Log entries created by Server 2 are replicated to both Server 1 and Server 3.
+
+![](https://github.com/Moret00/RAFT-Algorithm-Demo/edit/main/changeTerm.png)
+
+- _Election Start_: Server 3 initiates an election for term 2.
+- _Vote Request_: Server 1 receives a vote request from Server 3 for term 2 and updates its term to 2, changing its state to FOLLOWER.
+- _Vote Granting_: Server 3 receives the necessary votes and is elected as the new leader for term 2.
+- _Heartbeat Sending_: Server 3 begins sending heartbeats to other servers to assert its leadership.
+- _State Change_: Server 2 receives the heartbeat from Server 3 and changes its state to FOLLOWER.
+- _Log Replication_: Log entries created by Server 3 are replicated to both Server 1 and Server 2.
+
 All the code in this repository is commented to provide additional information and context. If you need any details or explanations, please refer to the comments within the code.
