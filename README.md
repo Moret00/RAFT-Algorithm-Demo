@@ -1,4 +1,4 @@
-# RAFT-Algorithm-Demo
+# RAFT-Algorithm Demo
 This project provides a simple simulation of the RAFT consensus algorithm for achieving distributed consensus in distributed systems.
 This project provides a simple simulation of the RAFT consensus algorithm, a fundamental protocol for achieving distributed consensus in distributed systems. <br><br>
 The simulation demonstrates key RAFT features, including:
