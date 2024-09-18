@@ -8,4 +8,4 @@ The simulation demonstrates key RAFT features, including:
 - **Log Replication**: The Leader replicates Log entries to all follower servers to ensure consistency. This demo shows how log entries are propagated and acknowledged by followers.
 
 The simulation includes detailed logging to illustrate the election process, heartbeat communication, and log replication. This demo is designed for educational purposes and can be extended for more advanced use cases.<br><br>
-Further details on RAFT Algorithm can be found [here]().
+Further details on RAFT Algorithm can be found [here](https://github.com/Moret00/RAFT-Algorithm-Demo/blob/main/RAFT-Algorithm.md).
