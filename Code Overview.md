@@ -1,4 +1,4 @@
-# Code Overview
+# Code-Overview
 This simulation provides a basic implementation of the **RAFT algorithm**. It includes a RAFTServer class that represents each server in the cluster, a LogEntry class to model log entries, and a simple main class for running the simulation. <br> Here you can find a brief description of all the classes and their attributes and methods:<br>
 
 **RAFTServer** Class <br><br>
