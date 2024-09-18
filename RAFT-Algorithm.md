@@ -26,6 +26,6 @@ Here’s how it works at a high level:
 
 6. **Failure Management**: If the Leader crashes or stops sending heartbeats, Followers eventually exceed their election timeout and will re-candidate to become the Leader, repeating the process. Even if some servers fail, RAFT operates correctly as long as a majority of servers are active and reach consensus.
 
-In **Conclusion**, RAFT ensures that a distributed system remains consistent and resilient despite failures. By using a consensus protocol to agree on a sequence of operations and managing leadership transitions and log replication, RAFT enables a reliable and fault-tolerant system. This design ensures that even in the face of server failures or network issues, the system can continue to operate correctly and provide consistent results across all servers.
+In **conclusion**, RAFT ensures that a distributed system remains consistent and resilient despite failures. By using a consensus protocol to agree on a sequence of operations and managing leadership transitions and log replication, RAFT enables a reliable and fault-tolerant system. This design ensures that even in the face of server failures or network issues, the system can continue to operate correctly and provide consistent results across all servers.
 
 ---
