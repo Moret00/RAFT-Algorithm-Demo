@@ -28,4 +28,6 @@ Here’s how it works at a high level:
 
 In **conclusion**, RAFT ensures that a distributed system remains consistent and resilient despite failures. By using a consensus protocol to agree on a sequence of operations and managing leadership transitions and log replication, RAFT enables a reliable and fault-tolerant system. This design ensures that even in the face of server failures or network issues, the system can continue to operate correctly and provide consistent results across all servers.
 
+A detailed explanation of the code, including class-by-class descriptions, can be found [here]().
+
 ---
