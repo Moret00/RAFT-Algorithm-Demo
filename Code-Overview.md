@@ -91,3 +91,4 @@ All three servers (Server 1, Server 2, and Server 3) have initialized and starte
 - _Log Replication_: Log entries created by Server 3 are replicated to both Server 1 and Server 2.<br><br>
 
 All the code in this repository is commented to provide additional information and context. If you need any details or explanations, please refer to the comments within the code.
+For seeing an implementation which has been enhanced to simulate real-world distributed systems check [RAFT-Algorithm-Full-Features](https://github.com/Moret00/RAFT-Algorithm-Full-Features).
